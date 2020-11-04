@@ -1,0 +1,36 @@
+/* =================== mobile button ======================= */
+.mobile-menu-btn__bar {
+ width: 28px;
+ height: 4px;
+ margin: 5px;
+ border-radius: 50px;
+ background: $burgundy;
+}
+
+.mobile-menu-btn {
+ cursor: pointer;
+}
+
+.bar-1,
+.bar-2,
+.bar-3 {
+ transition: transform 0.2s ease,
+ opacity 0.2s ease;
+}
+
+.change .bar-3 {
+margin-top: -8px;
+opacity: 0;
+}
+
+.change .bar-2 {
+transition-delay: 0.2s;
+transform: rotate(45deg);
+ 
+}
+
+.change .bar-1 {
+ transform: rotate(-45deg);
+ transition-delay: 0.2s;
+ margin-bottom: -8.5px;
+}
